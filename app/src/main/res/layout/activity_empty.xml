@@ -1,0 +1,56 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#5b5a5a"
+    android:orientation="vertical">
+        <ImageButton
+            android:elevation="16dp"
+            android:layout_gravity="center"
+            android:id="@+id/imageBukktton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/ic_call_24dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:layout_height="40dp"
+            android:textColor="@color/orange"
+            android:text="Phone"/>
+        <ImageButton
+            android:layout_marginHorizontal="15dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/ic_email_24dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:layout_height="40dp"
+            android:textColor="@color/orange"
+            android:text="Email"/>
+        <ImageButton
+            android:id="@+id/imakgeButton"
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/ic_location_24dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:layout_height="40dp"
+            android:textColor="@color/orange"
+            android:text="Location"/>
+
+
+
+</LinearLayout>
