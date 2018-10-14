@@ -122,7 +122,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
     private void launchHomeScreen() {
         prefManager.setFirstTimeLaunch(false);
-        startActivity(new Intent(WelcomeActivity.this, Sign.class));
+        startActivity(new Intent(WelcomeActivity.this, SplashActivity.class));
         finish();
     }
 
