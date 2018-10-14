@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.allandroidprojects.ecomsample.GiftActivity;
+import com.allandroidprojects.ecomsample.OpinionActivity;
 import com.allandroidprojects.ecomsample.R;
 import com.allandroidprojects.ecomsample.fragments.ImageListFragment;
 import com.allandroidprojects.ecomsample.fragments.ViewPagerActivity;
@@ -73,7 +74,7 @@ public class ItemDetailsActivity extends AppCompatActivity {
 
     public void openOpinionActivity(View view) {
         Toast.makeText(this, "Assume that the product details are sent to your friends", Toast.LENGTH_LONG).show();
-        startActivity(new Intent(this, GiftActivity.class));
+        startActivity(new Intent(this, OpinionActivity.class));
     }
 
     public void openGiftActivity(View view) {
