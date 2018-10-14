@@ -34,6 +34,7 @@
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".fragments.ViewPagerActivity"/>
+        <activity android:name=".Sign" android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".product.ItemDetailsActivity">
         </activity>
         <activity

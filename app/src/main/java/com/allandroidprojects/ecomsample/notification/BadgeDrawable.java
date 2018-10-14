@@ -12,9 +12,7 @@ import android.support.v4.content.ContextCompat;
 
 import com.allandroidprojects.ecomsample.R;
 
-/**
- * Created by priyankam on 4/13/2016.
- */
+
 public class BadgeDrawable extends Drawable {
 
     private float mTextSize;

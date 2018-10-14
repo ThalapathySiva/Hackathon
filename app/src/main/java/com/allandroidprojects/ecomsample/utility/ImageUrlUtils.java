@@ -2,9 +2,7 @@ package com.allandroidprojects.ecomsample.utility;
 
 import java.util.ArrayList;
 
-/**
- * Created by 06peng on 2015/6/24.
- */
+
 public class ImageUrlUtils {
     static ArrayList<String> wishlistImageUri = new ArrayList<>();
     static ArrayList<String> cartListImageUri = new ArrayList<>();

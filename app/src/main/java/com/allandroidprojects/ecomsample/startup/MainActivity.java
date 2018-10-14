@@ -15,15 +15,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.allandroidprojects.ecomsample.R;
+import com.allandroidprojects.ecomsample.Sign;
 import com.allandroidprojects.ecomsample.fragments.ImageListFragment;
 import com.allandroidprojects.ecomsample.miscellaneous.EmptyActivity;
 import com.allandroidprojects.ecomsample.notification.NotificationCountSetClass;
 import com.allandroidprojects.ecomsample.options.CartListActivity;
 import com.allandroidprojects.ecomsample.options.SearchResultActivity;
 import com.allandroidprojects.ecomsample.options.WishlistActivity;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,6 +43,9 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        /*TextView name = (TextView)findViewById(R.id.name);
+        String currentuser = FirebaseAuth.getInstance().getCurrentUser().getDisplayName();
+        name.setText(currentuser);*/
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -184,6 +192,11 @@ public class MainActivity extends AppCompatActivity
             viewPager.setCurrentItem(4);
         }else if (id == R.id.nav_item6) {
             viewPager.setCurrentItem(5);
+        }
+        else if (id == R.id.logout) {
+            FirebaseAuth.getInstance().signOut();
+            Intent intent = new Intent(MainActivity.this, Sign.class);
+            startActivity(intent);
         }else if (id == R.id.my_wishlist) {
             startActivity(new Intent(MainActivity.this, WishlistActivity.class));
         }else if (id == R.id.action_notifications) {
