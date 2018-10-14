@@ -13,7 +13,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
+import com.allandroidprojects.ecomsample.GiftActivity;
 import com.allandroidprojects.ecomsample.R;
 import com.allandroidprojects.ecomsample.product.ItemDetailsActivity;
 import com.allandroidprojects.ecomsample.startup.MainActivity;
@@ -65,7 +67,8 @@ public class CartListActivity extends AppCompatActivity {
     }
 
     public void openGiftActivity(View view) {
-        //TODO: This handles the "Make this a gift" action.
+        Toast.makeText(this, "Assume that the receiver details are provided", Toast.LENGTH_LONG).show();
+        startActivity(new Intent(this, GiftActivity.class));
     }
 
     public static class SimpleStringRecyclerViewAdapter

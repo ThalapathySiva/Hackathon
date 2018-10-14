@@ -55,5 +55,6 @@
         slider -> clear data
     </string>
     <string name="play_again">Play Again</string>
+    <string name="_50_ratings_amp_15_reviews"><![CDATA[50 ratings & 15 reviews]]></string>
 
 </resources>
