@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity
         // Get the notifications MenuItem and
         // its LayerDrawable (layer-list)
         MenuItem item = menu.findItem(R.id.action_cart);
-        NotificationCountSetClass.setAddToCart(MainActivity.this, item,notificationCountCart);
+        //NotificationCountSetClass.setAddToCart(MainActivity.this, item,notificationCountCart);
         // force the ActionBar to relayout its MenuItems.
         // onCreateOptionsMenu(Menu) will be called again.
         invalidateOptionsMenu();
