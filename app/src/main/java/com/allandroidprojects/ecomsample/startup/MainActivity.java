@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        /*TextView name = (TextView)findViewById(R.id.name);
+        TextView name = (TextView)findViewById(R.id.name);
         String currentuser = FirebaseAuth.getInstance().getCurrentUser().getDisplayName();
-        name.setText(currentuser);*/
+        name.setText(currentuser);
         //Winner winner chicken dinner
         //This is by Roshan
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
