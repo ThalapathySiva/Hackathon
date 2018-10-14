@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity
         /*TextView name = (TextView)findViewById(R.id.name);
         String currentuser = FirebaseAuth.getInstance().getCurrentUser().getDisplayName();
         name.setText(currentuser);*/
+        //Winner winner chicken dinner
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
