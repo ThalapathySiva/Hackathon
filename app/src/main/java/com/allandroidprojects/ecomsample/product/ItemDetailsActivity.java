@@ -68,4 +68,8 @@ public class ItemDetailsActivity extends AppCompatActivity {
         });
 
     }
+
+    public void openOpinionActivity(View view) {
+        //TODO: Create a empty activity for this.
+    }
 }
