@@ -25,6 +25,25 @@ import java.util.ArrayList;
 import static com.allandroidprojects.ecomsample.fragments.ImageListFragment.STRING_IMAGE_POSITION;
 import static com.allandroidprojects.ecomsample.fragments.ImageListFragment.STRING_IMAGE_URI;
 
+/* TODO: Read this.
+
+Feature information: Make this a gift
+
+In this feature, the user can choose to make the product a gift for someone.
+In that case, the money can be shared between the friends whom he chooses via FB/Insta/whatever (make some dummy friends)
+Then the friend will get notification (again, some dummy activity) asking them to contribute money for the gift. They can also add
+a custom message.
+Then the receiver will be delivered the product, with all the custom messages. This is just an idea. Implement with dummy stuff.
+No firebase full fire authentication bla bla needed.
+
+So, again:
+
+(Buyer's side: )Make this a gift --> GiftActivity --> Request friends to join
+(Friends' side: ) ReceiveJoiningRequestActivity --> Make payment of money, add message --> Done
+
+You can make it any way you want. This is a new, unique feature.
+
+ */
 public class CartListActivity extends AppCompatActivity {
     private static Context mContext;
     @Override
@@ -43,6 +62,10 @@ public class CartListActivity extends AppCompatActivity {
 
         recyclerView.setLayoutManager(recylerViewLayoutManager);
         recyclerView.setAdapter(new CartListActivity.SimpleStringRecyclerViewAdapter(recyclerView, cartlistImageUri));
+    }
+
+    public void openGiftActivity(View view) {
+        //TODO: This handles the "Make this a gift" action.
     }
 
     public static class SimpleStringRecyclerViewAdapter

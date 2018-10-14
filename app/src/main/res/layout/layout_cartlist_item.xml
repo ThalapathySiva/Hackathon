@@ -113,13 +113,27 @@
                       android:textSize="12dp"
                       android:textColor="@color/gen_black"
                       android:gravity="left"/>
+
         </LinearLayout>
 
+
     </LinearLayout>
+
+    <!-- TODO: This textView should open the Gift item activity (our new feature) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make this a gift"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:textAllCaps="true"
+        android:onClick="openGiftActivity"/>
+
     <View android:layout_width="match_parent"
           android:layout_height="@dimen/view_width_small"
           android:background="@color/grey_light"
-          android:layout_marginTop="8dp"
           android:layout_marginBottom="8dp"/>
 </LinearLayout>
 
