@@ -46,4 +46,11 @@ public class EmptyActivity extends AppCompatActivity {
 
     }
 
+    public void share(View view) {
+        Intent shareIntent = new Intent(Intent.ACTION_SEND);
+        shareIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        shareIntent.setType("text/plain");
+        shareIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Hey, download this app!");
+        startActivity(shareIntent);
+    }
 }
