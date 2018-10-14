@@ -8,6 +8,9 @@
 # Project: E-Commerce Android App with *Social Shopping feature*
 *Made as part of __Sparkout Tech - Hackathon 2018__*
 
+## Download APK
+You can download the APK here: https://github.com/ThalapathySiva/Hackathon/raw/master/app-debug.apk
+
 ## Description
 This is a versatile e-commerce application, which can be used to provide easy, mobile shopping experience to the consumers.
 
@@ -33,4 +36,5 @@ We decided to provide a more social, collaborative shopping experience, where th
 - ### Welcome screen: ![Login](https://github.com/ThalapathySiva/Hackathon/blob/master/screenshots/login.png?raw=true)
 - ### Firebase based Authentication: ![Firebase](https://github.com/ThalapathySiva/Hackathon/blob/master/screenshots/login2.png?raw=true)
 - ### Home screen: ![Login](https://github.com/ThalapathySiva/Hackathon/blob/master/screenshots/main.png?raw=true)
-- ### Item Details: ![Login](https://github.com/ThalapathySiva/Hackathon/blob/master/screenshots/buy.png?raw=true)
+- ### Item Details: ![Login](https://github.com/ThalapathySiva/Hackathon/blob/master/screenshots/details.png?raw=true)
+- ### Cart: ![Login](https://github.com/ThalapathySiva/Hackathon/blob/master/screenshots/buy.png?raw=true)
