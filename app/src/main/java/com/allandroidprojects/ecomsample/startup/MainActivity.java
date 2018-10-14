@@ -198,6 +198,7 @@ public class MainActivity extends AppCompatActivity
             FirebaseAuth.getInstance().signOut();
             Intent intent = new Intent(MainActivity.this, Sign.class);
             startActivity(intent);
+            finish();
         }else if (id == R.id.my_wishlist) {
             startActivity(new Intent(MainActivity.this, WishlistActivity.class));
         }else if (id == R.id.action_notifications) {
