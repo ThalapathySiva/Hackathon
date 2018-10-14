@@ -19,6 +19,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.allandroidprojects.ecomsample.R;
+import com.allandroidprojects.ecomsample.Sign;
 import com.allandroidprojects.ecomsample.utility.PrefManager;
 
 public class WelcomeActivity extends AppCompatActivity {
@@ -121,7 +122,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
     private void launchHomeScreen() {
         prefManager.setFirstTimeLaunch(false);
-        startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
+        startActivity(new Intent(WelcomeActivity.this, Sign.class));
         finish();
     }
 

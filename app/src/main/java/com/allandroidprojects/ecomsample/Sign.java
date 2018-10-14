@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.allandroidprojects.ecomsample.startup.MainActivity;
 import com.allandroidprojects.ecomsample.startup.WelcomeActivity;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -40,7 +41,7 @@ public class Sign extends AppCompatActivity {
         Button signup =findViewById(R.id.login);
         firebaseAuth = FirebaseAuth.getInstance();
          if (firebaseAuth.getCurrentUser() != null) {
-            startActivity(new Intent(Sign.this, WelcomeActivity.class));
+            startActivity(new Intent(Sign.this, MainActivity.class));
             finish();
         }
         firebaseDatabase=FirebaseDatabase.getInstance();

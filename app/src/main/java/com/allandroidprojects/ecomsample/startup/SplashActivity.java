@@ -59,7 +59,7 @@ public class SplashActivity extends Activity implements Animation.AnimationListe
 
     public void onAnimationEnd(Animation animation) {
             // Start Main Screen
-            Intent i = new Intent(SplashActivity.this, Sign.class);
+            Intent i = new Intent(SplashActivity.this, WelcomeActivity.class);
             startActivity(i);
             this.finish();
     }
