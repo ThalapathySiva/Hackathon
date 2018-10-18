@@ -49,11 +49,12 @@
                   android:layout_width="wrap_content"
                   android:layout_height="match_parent"
                   android:layout_weight="1"
-                  android:background="@color/colorPrimary"
+                  android:background="@color/colorPrimaryDark"
                   android:text="PAYMENT"
                   android:textSize="14dp"
                   android:textColor="@color/gen_white"
                   android:textStyle="bold"
+                android:onClick="goToPayment"
                   android:gravity="center"/>
     </LinearLayout>
     <include android:id="@+id/layout_cart_empty"

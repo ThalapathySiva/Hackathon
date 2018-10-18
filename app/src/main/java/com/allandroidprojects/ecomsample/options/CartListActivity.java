@@ -16,6 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.allandroidprojects.ecomsample.GiftActivity;
+import com.allandroidprojects.ecomsample.PaymentActivity;
 import com.allandroidprojects.ecomsample.R;
 import com.allandroidprojects.ecomsample.product.ItemDetailsActivity;
 import com.allandroidprojects.ecomsample.startup.MainActivity;
@@ -69,6 +70,11 @@ public class CartListActivity extends AppCompatActivity {
     public void openGiftActivity(View view) {
         Toast.makeText(this, "Assume that the receiver details are provided", Toast.LENGTH_LONG).show();
         startActivity(new Intent(this, GiftActivity.class));
+    }
+
+    public void goToPayment(View view) {
+        startActivity(new Intent(CartListActivity.this, PaymentActivity.class));
+        finish();
     }
 
     public static class SimpleStringRecyclerViewAdapter

@@ -59,6 +59,7 @@
         <activity android:name=".miscellaneous.EmptyActivity" />
         <activity android:name=".GiftActivity" />
         <activity android:name=".OpinionActivity"></activity>
+        <activity android:name=".PaymentActivity"></activity>
     </application>
 
 </manifest>
